@@ -45,10 +45,14 @@ namespace Learning
             switch (menuSelection)
             {
                 case 1:
-                    Console.WriteLine("Let's roll some dice!");
+                    Dice D = new Dice();
+                    Console.WriteLine("Let's roll some dice! \n");
+                    D.DiceToRoll();
+                    D.RollDice(D.diceProperties[1], D.diceProperties[0]);
+                    D.Continue();
                     break;
                 case 2:
-                    Console.WriteLine("Let's generate some rando's!");
+                    Console.WriteLine("Let's generate some rando's! \n");
                     RNG.HowMany();
                     RNG.Continue();
 

@@ -32,7 +32,7 @@ namespace Learning
             int looper = 0;
             while (looper == 0)
             {
-                Console.WriteLine("Would you like to generate more random numbers?");
+                Console.WriteLine("Would you like to continue?");
                 string yesNo = Console.ReadLine();
                 if (yesNo == "n")
                     looper++;
